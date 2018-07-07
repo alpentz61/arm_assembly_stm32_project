@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>2</fileVersion>
+    <fileChecksum>1179158613</fileChecksum>
+    <configuration>
+        <name>IO_Toggle</name>
+        <outputs>
+            <file>$PROJ_DIR$\IO_Toggle\Obj\startup_stm32f4xx.o</file>
+            <file>$PROJ_DIR$\startup_stm32f4xx.s</file>
+            <file>$PROJ_DIR$\stm32f4xx_flash.icf</file>
+            <file>$PROJ_DIR$\IO_Toggle\Exe\IO_Toggle.out</file>
+            <file>$PROJ_DIR$\IO_Toggle\List\IO_Toggle.map</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 3 4</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\startup_stm32f4xx.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 0</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\IO_Toggle\Exe\IO_Toggle.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 4</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 2 0</file>
+                </tool>
+            </inputs>
+        </file>
+    </configuration>
+</project>

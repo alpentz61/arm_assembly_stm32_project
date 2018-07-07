@@ -1,0 +1,87 @@
+###############################################################################
+#
+# IAR ELF Linker V8.22.2.15995/W32 for ARM                07/Jul/2018  17:56:04
+# Copyright 2007-2018 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\Users\Margaret
+#        Pentz\Desktop\Barebones_Assembly_Project\IO_Toggle\Exe\IO_Toggle.out
+#    Map file     =  
+#        C:\Users\Margaret
+#        Pentz\Desktop\Barebones_Assembly_Project\IO_Toggle\List\IO_Toggle.map
+#    Command line =  
+#        -f C:\Users\MARGAR~1\AppData\Local\Temp\EWB0F.tmp ("C:\Users\Margaret
+#        Pentz\Desktop\Barebones_Assembly_Project\IO_Toggle\Obj\startup_stm32f4xx.o"
+#        --redirect _Printf=_PrintfSmallNoMb --redirect _Scanf=_ScanfSmallNoMb
+#        -o "C:\Users\Margaret
+#        Pentz\Desktop\Barebones_Assembly_Project\IO_Toggle\Exe\IO_Toggle.out"
+#        --map "C:\Users\Margaret
+#        Pentz\Desktop\Barebones_Assembly_Project\IO_Toggle\List\IO_Toggle.map"
+#        --config "C:\Users\Margaret
+#        Pentz\Desktop\Barebones_Assembly_Project\stm32f4xx_flash.icf"
+#        --semihosting --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"P1":  place in [from 0x08000000 to 0x080fffff] { ro };
+
+No sections matched the following patterns:
+
+  ro section .intvec  in "A0"
+  rw                  in "P2"
+
+
+  Section  Kind        Address  Size  Object
+  -------  ----        -------  ----  ------
+"P1":                           0x42
+  .text    ro code  0x08000000  0x42  startup_stm32f4xx.o [1]
+                  - 0x08000042  0x42
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module               ro code
+    ------               -------
+C:\Users\Margaret Pentz\Desktop\Barebones_Assembly_Project\IO_Toggle\Obj: [1]
+    startup_stm32f4xx.o       66
+    ----------------------------
+    Total:                    66
+
+--------------------------------
+    Grand Total:              66
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address  Size  Type      Object
+-----                      -------  ----  ----      ------
+__iar_program_start     0x08000001        Code  Wk  startup_stm32f4xx.o [1]
+__iar_systems$$module {Abs}
+                        0x00000001        Data  Gb  command line/config [2]
+
+
+[1] = C:\Users\Margaret Pentz\Desktop\Barebones_Assembly_Project\IO_Toggle\Obj
+[2] = command line
+
+  66 bytes of readonly  code memory
+
+Errors: none
+Warnings: none
