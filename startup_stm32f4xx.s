@@ -3,6 +3,9 @@
 ;
 ;Description: This is the minimal assembly file which can be used to turn on 
 ;the LEDs on the STM32F407G-DISC1 Board
+;
+;Note: Currently this file only starts up in DEBUG mode, indicating other 
+;functionality is necessary before it will start up as soon as its plugged in to power
 
         MODULE  ?cstartup
 
